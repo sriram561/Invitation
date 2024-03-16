@@ -1,0 +1,197 @@
+html {
+    scroll-behavior: smooth !important;
+}
+
+
+body {
+    font-family: 'Josefin Sans', sans-serif !important;
+    padding: 0 !important;
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+}
+
+body::-webkit-scrollbar {
+    display: none !important;
+}
+
+.font-esthetic {
+    font-family: 'Sacramento', cursive !important;
+    color: #cfbaf0 !important;
+}
+
+.font-arabic {
+    font-family: 'Noto Naskh Arabic', serif !important;
+    color: #F1FAEE !important;
+}
+
+.img-crop {
+    width: 14rem;
+    height: 14rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.img-crop>img {
+    display: inline;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+}
+
+.fh5co-cover {
+    height: 1000px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+}
+
+.btn-music {
+    position: fixed;
+    bottom: 9vh !important;
+    right: 2vh !important;
+    z-index: 1055 !important;
+}
+
+.loading-page {
+    position: fixed;
+    inset: 0 !important;
+    width: 100%;
+    height: 100%;
+    background-color: #6a4c93;
+    z-index: 1056 !important;
+}
+
+.card-body {
+    overflow-wrap: break-word !important;
+}
+
+.mouse-animation {
+    padding: 0.25rem 0.625rem;
+    height: 2rem;
+    border: 0.1rem solid #ffffff;
+    border-radius: 1.4rem;
+    opacity: 0.75;
+    box-sizing: content-box;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+}
+
+.mouse-animation>.scroll-animation {
+    width: 0.25rem;
+    height: 0.625rem;
+    border-radius: 25%;
+    background-color: #ffffff;
+    animation-name: scroll;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin-icon {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spin-button {
+    animation: spin-icon 5s linear infinite;
+}
+
+@keyframes love {
+    50% {
+        transform: translateY(1rem);
+    }
+}
+
+.animate-love {
+    animation: love 5s ease-in-out infinite;
+}
+
+.dark-section {
+    background-color: #003049 !important;
+    margin-top: -0.5rem;
+    margin-bottom: -0.5rem;
+}
+
+.footer {
+    background-color: #3d405b !important;
+    margin-top: -0.5rem;
+    padding-bottom: 5rem;
+}
+
+.container {
+    text-align: center;
+    /* Center align its children */
+}
+
+.video-container {
+    position: relative;
+    /* Positioning context for absolutely positioned child */
+    width: 100%;
+    /* Set width to 100% of the parent container */
+    height: 100%;
+    /* Set initial height to 0 */
+    padding-bottom: 56.25%;
+    /* Set aspect ratio (16:9) for responsive scaling */
+    overflow: hidden;
+    /* Hide overflow content */
+}
+
+.video-container iframe {
+    position: absolute;
+    /* Position absolutely within the container */
+    top: 0;
+    /* Align to the top of the container */
+    left: 0;
+    /* Align to the left of the container */
+    width: 100%;
+    /* Set width to fill the container */
+    height: 100%;
+    /* Set height to fill the container */
+    border: none;
+    /* Remove default iframe border */
+}
+
+.image-container {
+    width: 400px;
+    /* Adjust width as needed */
+    height: 300px;
+    /* Adjust height as needed */
+    border: 2px solid #ddd;
+    /* Border style */
+    border-radius: 10px;
+    /* Rounded border */
+    overflow: hidden;
+    /* Hide overflow */
+    margin: 0 auto;
+    /* Center align horizontally */
+}
+
+.image-container img {
+    width: 100%;
+    /* Make image fill its container */
+    height: 100%;
+    /* Make image fill its container */
+    object-fit: cover;
+    /* Maintain aspect ratio and cover the container */
+}
